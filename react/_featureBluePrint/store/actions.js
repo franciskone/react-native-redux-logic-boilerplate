@@ -1,25 +1,11 @@
 import types from "./types"
 
 export default {
-	increment,
-	decrement,
-	reset,
+	action
 };
 
-function increment() {
+function action() {
 	return {
-		type: types.INCREMENT
-	}
-}
-
-function decrement() {
-	return {
-		type: types.DECREMENT
-	}
-}
-
-function reset() {
-	return {
-		type: types.RESET
+		type: types.FEATURE_ACTION_TYPE
 	}
 }
