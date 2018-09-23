@@ -6,14 +6,20 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {SafeAreaView, StyleSheet, View} from 'react-native';
-import Router from './router';
+import React, {Component} from 'react'
+import {SafeAreaView, StyleSheet, View} from 'react-native'
+import Router from './router'
 import NavigationService from "./common/navigationService"
+import enableNetworkDebug from "./common/util/enableNetworkDebug"
 
 type Props = {};
 export default class App extends Component<Props> {
-  render() {
+	
+	componentDidMount() {
+		enableNetworkDebug();
+	}
+ 
+	render() {
 	  return (
       <SafeAreaView style={styles.container}>
 	      <Router
