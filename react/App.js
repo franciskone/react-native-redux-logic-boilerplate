@@ -10,13 +10,13 @@ import React, {Component} from 'react'
 import {SafeAreaView, StyleSheet, View} from 'react-native'
 import Router from './router'
 import NavigationService from "./common/navigationService"
-import enableNetworkDebug from "./common/util/enableNetworkDebug"
+import enableNetworkDebugUtil from "./common/util/enableNetworkDebugUtil"
 
 type Props = {};
 export default class App extends Component<Props> {
 	
 	componentDidMount() {
-		enableNetworkDebug();
+		enableNetworkDebugUtil();
 	}
  
 	render() {

@@ -1,4 +1,4 @@
-export default enableNetworkDebug = () => {
+export default enableNetworkDebugUtil = () => {
 	
 	global.XMLHttpRequest = global.originalXMLHttpRequest ?
 		global.originalXMLHttpRequest :
