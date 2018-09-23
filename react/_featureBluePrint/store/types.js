@@ -1,7 +1,5 @@
-const prefix = 'test';
+const prefix = 'newFeature';
 
 export default {
-	INCREMENT: `${prefix}/INCREMENT`,
-	DECREMENT: `${prefix}/DECREMENT`,
-	RESET: `${prefix}/RESET`,
+	FEATURE_ACTION_TYPE: `${prefix}/FEATURE_ACTION_TYPE`,
 };
