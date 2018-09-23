@@ -8,6 +8,10 @@ not ready to be used
 $ npm i redux --save
 $ npm i react-redux --save
 $ npm i react-navigation --save
-$ npm i remote-redux-devtools --save-dev
-$ npm i remote-redux-devtoolsremotedev-server --save-dev
 ```
+
+## Debugging
+using https://github.com/jhen0409/react-native-debugger it will have:
+ * Debugger Integration
+ * React DevTools Integration
+ * Redux DevTools Integration
