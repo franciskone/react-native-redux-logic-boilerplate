@@ -3,6 +3,11 @@ import routeNames from "./routeNames";
 import testScreenConfig from "./screenConfig/testScreenConfig";
 
 
-export default createStackNavigator({
-	[routeNames.TEST]: testScreenConfig,
-});
+export default createStackNavigator(
+	{
+		[routeNames.TEST]: testScreenConfig,
+	},
+	{
+		initialRouteName: routeNames.TEST,
+	}
+);
